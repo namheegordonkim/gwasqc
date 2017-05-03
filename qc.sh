@@ -43,13 +43,16 @@ plink --noweb --bfile $tmp2 --rel-cutoff --make-bed --out $out
 plink --bfile $out --recode --out $out
 
 # step 7: PCA by EIGENSTRAT
-echo genotypename:    $out.ped > ./par.PED.EIGENSTRAT
-echo snpname:         $out.map >> ./par.PED.EIGENSTRAT
-echo indivname:       $out.ped >> ./par.PED.EIGENSTRAT
-echo outputformat:    EIGENSTRAT >> ./par.PED.EIGENSTRAT
-echo genotypeoutname: $out.eigenstratgeno >> ./par.PED.EIGENSTRAT
-echo snpoutname:      $out.snp >> ./par.PED.EIGENSTRAT
-echo indivoutname:    $out.ind >> ./par.PED.EIGENSTRAT
-echo familynames:     NO >> ./par.PED.EIGENSTRAT
+# echo genotypename:    $out.ped > ./par.PED.EIGENSTRAT
+# echo snpname:         $out.map >> ./par.PED.EIGENSTRAT
+# echo indivname:       $out.fam >> ./par.PED.EIGENSTRAT
+# echo outputformat:    EIGENSTRAT >> ./par.PED.EIGENSTRAT
+# echo genotypeoutname: $out.eigenstratgeno >> ./par.PED.EIGENSTRAT
+# echo snpoutname:      $out.snp >> ./par.PED.EIGENSTRAT
+# echo indivoutname:    $out.ind >> ./par.PED.EIGENSTRAT
+# echo familynames:     NO >> ./par.PED.EIGENSTRAT
+#
+# convertf -p ./par.PED.EIGENSTRAT
 
-convertf -p ./par.PED.EIGENSTRAT
+smartpca.pl -i $out.ped -a $out.map -b $out.fam -s 6 \ 
+-e $out.eval -l $out.elog -o $out.pca -p $out.plot
