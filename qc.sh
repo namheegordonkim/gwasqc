@@ -35,7 +35,7 @@ plink --noweb --bfile $out --extract $out.prune.in --recode --mind 0.1 --make-be
 # IBD check (make .genome file)
 plink --noweb --bfile $out --genome --min 0.05 --out $out
 # remove relateds
-plink --noweb --bfile $out --rel-ctoff --out $out
+plink --noweb --bfile $out --rel-cutoff --out $out
 
 # step 7: PCA by EIGENSTRAT
 
