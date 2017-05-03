@@ -36,8 +36,6 @@ plink --noweb --bfile $tmp2 --genome --min 0.05 --out $out
 # remove relateds
 plink --noweb --bfile $tmp2 --rel-cutoff --make-bed --out $out
 
-# before PCA: recode .ped and .map fles
-plink --bfile $out --recode --out $out
 
 # step 7: PCA by EIGENSTRAT
 # echo genotypename:    $out.ped > ./par.PED.EIGENSTRAT
@@ -51,5 +49,5 @@ plink --bfile $out --recode --out $out
 #
 # convertf -p ./par.PED.EIGENSTRAT
 
-smartpca.perl -i $out.ped -a $out.map -b $out.fam -s 6 \
+smartpca.perl -i $out.bed -a $out.bim -b $out.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
