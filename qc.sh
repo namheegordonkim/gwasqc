@@ -19,7 +19,7 @@ mkdir $tmpdir
 # step 3: sex check on X chromosome
 plink --noweb --bfile $data --check-sex --out $out # generates .sexcheck file
 # exclude non-OKs
-plink --noweb --bfile $out --exclude $out.sexcheck --make-bed --out $out
+plink --noweb --bfile $data --exclude $out.sexcheck --make-bed --out $out
 
 # step 4: remove sex chromosomes and mtDNA from SNP arrays
 plink --noweb --bfile $out --chr 1-22 --make-bed --out $out
