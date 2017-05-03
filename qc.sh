@@ -6,8 +6,8 @@
 
 data=$1
 out=$2
-tmp1=out.tmp1
-tmp2=out.tmp2
+tmp1=$out.tmp1
+tmp2=$out.tmp2
 tmpdir="./tmp"
 
 mkdir $tmpdir
@@ -43,3 +43,13 @@ plink --noweb --bfile $tmp2 --rel-cutoff --make-bed --out $out
 plink --bfile $out --recode --out $out
 
 # step 7: PCA by EIGENSTRAT
+echo genotypename:    $out.ped > ./par.PED.EIGENSTRAT
+echo snpname:         $out.map >> ./par.PED.EIGENSTRAT
+echo indivname:       $out.ped >> ./par.PED.EIGENSTRAT
+echo outputformat:    EIGENSTRAT >> ./par.PED.EIGENSTRAT
+echo genotypeoutname: $out.eigenstratgeno >> ./par.PED.EIGENSTRAT
+echo snpoutname:      $out.snp >> ./par.PED.EIGENSTRAT
+echo indivoutname:    $out.ind >> ./par.PED.EIGENSTRAT
+echo familynames:     NO >> ./par.PED.EIGENSTRAT
+
+convertf -p ./par.PED.EIGENSTRAT
