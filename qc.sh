@@ -8,9 +8,6 @@ data=$1
 out=$2
 tmp1=$out.tmp1
 tmp2=$out.tmp2
-tmpdir="./tmp"
-
-mkdir $tmpdir
 
 # step 1: exclude uncertains
 # do nothing--there is no known phenotype associated with the data
@@ -54,5 +51,5 @@ plink --bfile $out --recode --out $out
 #
 # convertf -p ./par.PED.EIGENSTRAT
 
-smartpca.pl -i $out.ped -a $out.map -b $out.fam -s 6 \ 
+smartpca -i $out.ped -a $out.map -b $out.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
