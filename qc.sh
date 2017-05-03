@@ -8,7 +8,7 @@ data=$1
 out=$2
 
 # step 1: exclude uncertains
-plink --noweb --file $data --prune --make-bed --out $out
+plink --noweb --bfile $data --prune --make-bed --out $out
 
 # step 2: update/check FAM with AD status
 # no idea how to do this...
@@ -34,4 +34,4 @@ plink --noweb --bfile $out --genome --min 0.05 --out $out
 # remove relateds
 plink --noweb --bfile $out --rel-ctoff --out $out
 
-# step 7: EIGENSTRAT 
+# step 7: EIGENSTRAT
