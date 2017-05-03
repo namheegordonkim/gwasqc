@@ -51,5 +51,5 @@ plink --bfile $out --recode --out $out
 #
 # convertf -p ./par.PED.EIGENSTRAT
 
-smartpca -i $out.ped -a $out.map -b $out.fam -s 6 \
+smartpca.perl -i $out.ped -a $out.map -b $out.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
