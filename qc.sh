@@ -6,6 +6,8 @@
 
 data=$1
 out=$2
+tmp1=out.tmp1
+tmp2=out.tmp2
 tmpdir="./tmp"
 
 mkdir $tmpdir
@@ -19,23 +21,23 @@ mkdir $tmpdir
 # step 3: sex check on X chromosome
 plink --noweb --bfile $data --check-sex --out $out # generates .sexcheck file
 # exclude non-OKs
-plink --noweb --bfile $data --exclude $out.sexcheck --make-bed --out $out
+plink --noweb --bfile $data --exclude $out.sexcheck --make-bed --out $tmp2
 
 # step 4: remove sex chromosomes and mtDNA from SNP arrays
-plink --noweb --bfile $out --chr 1-22 --make-bed --out $out
+plink --noweb --bfile $tmp2 --chr 1-22 --make-bed --out $tmp1
 
 # step 5: heterozygosity statistics
-plink --noweb --bfile $out --het  --out $out
+plink --noweb --bfile $tmp1 --het --out $out
 
 # step 5: SNP pruning by LD (specified in the doc)
-plink --noweb --bfile $out --indep-pairwise 1500 150 0.1 --out $out
-plink --noweb --bfile $out --extract $out.prune.in --mind 0.1 --make-bed --out $out
+plink --noweb --bfile $tmp1 --indep-pairwise 1500 150 0.1 --out $out
+plink --noweb --bfile $tmp1 --extract $out.prune.in --mind 0.1 --make-bed --out $tmp2
 
 # step 6: cryptic relatedness/IBD check
 # IBD check (make .genome file)
-plink --noweb --bfile $out --genome --min 0.05 --out $out
+plink --noweb --bfile $tmp2 --genome --min 0.05 --out $out
 # remove relateds
-plink --noweb --bfile $out --rel-cutoff --out $out
+plink --noweb --bfile $tmp2 --rel-cutoff --make-bed --out $out
 
 # before PCA: recode .ped and .map fles
 plink --bfile $out --recode --out $out
