@@ -19,7 +19,7 @@ mkdir -p $tmpdir
 # do nothing--there is no known phenotype associated with the data
 
 # step 2: update/check FAM with AD status
-Rscript replace_uncertains_fam.R $data $tmp1
+Rscript scripts/replace_uncertains_fam.R $data $tmp1
 
 # step 3: sex check on X chromosome
 plink --noweb --bfile $data --check-sex --out $out # generates .sexcheck file
