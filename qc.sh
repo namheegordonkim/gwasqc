@@ -9,8 +9,8 @@ tmpdir="./tmp"
 
 data=$1
 out=$outdir/$2
-tmp1=$tmpdir/$out.tmp1
-tmp2=$tmpdir/$out.tmp2
+tmp1=$tmpdir/$2.tmp1
+tmp2=$tmpdir/$2.tmp2
 
 mkdir -p $outdir
 mkdir -p $tmpdir
