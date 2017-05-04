@@ -32,9 +32,9 @@ plink --noweb --bfile $tmp1 --extract $out.prune.in --mind 0.1 --make-bed --out 
 
 # step 6: cryptic relatedness/IBD check
 # IBD check (make .genome file)
-plink --noweb --bfile $tmp2 --genome --min 0.05 --out $out
+plink --noweb --bfile $tmp2 --genome --min 0.05 --make-bed --out $tmp1
 # remove relateds
-plink --noweb --bfile $tmp2 --rel-cutoff --make-bed --out $out
+plink --noweb --bfile $tmp1 --rel-cutoff --make-bed --out $out
 
 # step 7: PCA by EIGENSTRAT
 # echo genotypename:    $out.ped > ./par.PED.EIGENSTRAT
@@ -52,6 +52,6 @@ smartpca.perl -i $out.bed -a $out.bim -b $out.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
 
 # step 7b: remove outliers/duplicates from the pruned file
-
+plink --noweb --list-duplicate-vars
 
 # step 8: MAF, HWE, MND, GENO
