@@ -8,6 +8,7 @@ outdir="./out"
 tmpdir="./tmp"
 
 data=$1
+# output data along with any kind of statistics should be stored in out folder
 out=$outdir/$2
 tmp1=$tmpdir/$2.tmp1
 tmp2=$tmpdir/$2.tmp2
@@ -40,7 +41,7 @@ plink --noweb --bfile $tmp1 --extract $out.prune.in --mind 0.1 --make-bed --out 
 # IBD check (make .genome file)
 plink --noweb --bfile $tmp2 --genome --min 0.05 --make-bed --out $tmp1
 # remove relateds
-plink --noweb --bfile $tmp1 --rel-cutoff --make-bed --out $out
+plink --noweb --bfile $tmp1 --rel-cutoff --make-bed --out $tmp2
 
 # step 7: PCA by EIGENSTRAT
 # echo genotypename:    $out.ped > ./par.PED.EIGENSTRAT
@@ -55,12 +56,16 @@ plink --noweb --bfile $tmp1 --rel-cutoff --make-bed --out $out
 # convertf -p ./par.PED.EIGENSTRAT
 
 # coming back to step 2, mask all the -9s
-Rscript scripts/replace_uncertains_fam.R $out $out
+Rscript scripts/replace_uncertains_fam.R $tmp2 $tmp2
 
-smartpca.perl -i $out.bed -a $out.bim -b $out.fam -s 6 \
+smartpca.perl -i $tmp2.bed -a $tmp2.bim -b $tmp2.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
 
 # step 7b: remove outliers/duplicates from the pruned file
 # plink --noweb --list-duplicate-vars
 
 # step 8: MAF, HWE, MND, GENO
+plink --noweb --bfile $tmp2 --maf 0.01 --hwe 0.000005 --mind 0.05 --geno 0.05 --make-bed --out $tmp1
+
+# step 9: frequency check after-the-fact
+plink --noweb --bfile $tmp1 --freq --out $out
