@@ -13,7 +13,7 @@ tmp2=$out.tmp2
 # do nothing--there is no known phenotype associated with the data
 
 # step 2: update/check FAM with AD status
-./scripts/replace_uncertains_fam.R $data $tmp1
+Rscript replace_uncertains_fam.R $data $tmp1
 
 # step 3: sex check on X chromosome
 plink --noweb --bfile $data --check-sex --out $out # generates .sexcheck file
@@ -36,7 +36,6 @@ plink --noweb --bfile $tmp2 --genome --min 0.05 --out $out
 # remove relateds
 plink --noweb --bfile $tmp2 --rel-cutoff --make-bed --out $out
 
-
 # step 7: PCA by EIGENSTRAT
 # echo genotypename:    $out.ped > ./par.PED.EIGENSTRAT
 # echo snpname:         $out.map >> ./par.PED.EIGENSTRAT
@@ -51,3 +50,8 @@ plink --noweb --bfile $tmp2 --rel-cutoff --make-bed --out $out
 
 smartpca.perl -i $out.bed -a $out.bim -b $out.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
+
+# step 7b: remove outliers/duplicates from the pruned file
+
+
+# step 8: MAF, HWE, MND, GENO
