@@ -69,3 +69,12 @@ plink --noweb --bfile $tmp2 --maf 0.01 --hwe 0.000005 --mind 0.05 --geno 0.05 --
 
 # step 9: frequency check after-the-fact
 plink --noweb --bfile $tmp1 --freq --out $out
+
+# step 10: split by chromosome and recode into vcf
+numchr=22
+for i in `seq 1 $numchr`
+do
+  plink --noweb --bfile $tmp1 --output-chr $i --recode vcf --out $out.chr$i
+  # compress
+  vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
+done
