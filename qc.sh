@@ -19,7 +19,7 @@ mkdir -p $tmpdir
 # do nothing--there is no known phenotype associated with the data
 
 # step 2: update/check FAM with AD status
-Rscript scripts/replace_uncertains_fam.R $data $tmp1
+# bypass this step, do it immediately before PCA
 
 # step 3: sex check on X chromosome
 plink --noweb --bfile $data --check-sex --out $out # generates .sexcheck file
@@ -53,6 +53,9 @@ plink --noweb --bfile $tmp1 --rel-cutoff --make-bed --out $out
 # echo familynames:     NO >> ./par.PED.EIGENSTRAT
 #
 # convertf -p ./par.PED.EIGENSTRAT
+
+# coming back to step 2, mask all the -9s
+Rscript scripts/replace_uncertains_fam.R $out $out
 
 smartpca.perl -i $out.bed -a $out.bim -b $out.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
