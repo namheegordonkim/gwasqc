@@ -1,13 +1,19 @@
-#!/usr/local/bin
+#!/usr/bin
 # NOTE: Dependencies include:
 # R, plink for data cleaning
 # EIGENSOFT/EIGENSTRAT for PCA
 # ShapeIT, IMPUTE2 for imputation
 
+outdir="./out"
+tmpdir="./tmp"
+
 data=$1
-out=$2
-tmp1=$out.tmp1
-tmp2=$out.tmp2
+out=$outdir/$2
+tmp1=$tmpdir/$out.tmp1
+tmp2=$tmpdir/$out.tmp2
+
+mkdir -p $outdir
+mkdir -p $tmpdir
 
 # step 1: exclude uncertains
 # do nothing--there is no known phenotype associated with the data
@@ -52,6 +58,6 @@ smartpca.perl -i $out.bed -a $out.bim -b $out.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
 
 # step 7b: remove outliers/duplicates from the pruned file
-plink --noweb --list-duplicate-vars
+# plink --noweb --list-duplicate-vars
 
 # step 8: MAF, HWE, MND, GENO
