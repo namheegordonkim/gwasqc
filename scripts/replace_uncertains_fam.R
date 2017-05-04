@@ -1,6 +1,3 @@
-# install.packages("dplyr")
-library(dplyr)
-
 # based on https://www.cog-genomics.org/plink2/formats#fam
 
 args <- commandArgs(TRUE)
