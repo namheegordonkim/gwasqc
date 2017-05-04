@@ -13,7 +13,7 @@ tmp2=$out.tmp2
 # do nothing--there is no known phenotype associated with the data
 
 # step 2: update/check FAM with AD status
-# no idea how to do this...
+./scripts/replace_uncertains_fam.R $data $tmp1
 
 # step 3: sex check on X chromosome
 plink --noweb --bfile $data --check-sex --out $out # generates .sexcheck file
