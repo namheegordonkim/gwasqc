@@ -65,16 +65,16 @@ smartpca.perl -i $tmp2.bed -a $tmp2.bim -b $tmp2.fam -s 6 \
 # plink --noweb --list-duplicate-vars
 
 # step 8: MAF, HWE, MND, GENO
-plink --noweb --bfile $tmp2 --maf 0.01 --hwe 0.000005 --mind 0.05 --geno 0.05 --make-bed --out $tmp1
+plink --noweb --bfile $tmp2 --maf 0.01 --hwe 0.000005 --mind 0.05 --geno 0.05 --make-bed --out $out
 
 # step 9: frequency check after-the-fact
-plink --noweb --bfile $tmp1 --freq --out $out
+plink --noweb --bfile $out --freq --out $out
 
 # step 10: split by chromosome and recode into vcf
 numchr=22
 for i in `seq 1 $numchr`
 do
-  plink --noweb --bfile $tmp1 --chr $i --recode vcf --out $out.chr$i
+  plink --noweb --bfile $out --chr $i --recode vcf --out $out.chr$i
   # compress
   vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
 done
