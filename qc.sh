@@ -77,5 +77,5 @@ do
   plink --noweb --bfile $out --chr $i --out $out.chr$i
   plink --noweb --bfile $out.chr$i --recode vcf --out $out.chr$i
   # compress
-  vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
+  # vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
 done
