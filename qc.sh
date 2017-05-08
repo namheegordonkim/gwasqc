@@ -1,4 +1,8 @@
 #!/usr/bin/bash
+#PBS -l nodes=22:ppn=16
+#PBS -l walltime=12:00:00
+
+
 # NOTE: Dependencies include:
 # R, plink for data cleaning
 # EIGENSOFT/EIGENSTRAT for PCA
