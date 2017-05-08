@@ -77,5 +77,11 @@ do
   plink --noweb --bfile $out --chr $i --make-bed --out $out.chr$i
   plink --noweb --bfile $out.chr$i --recode vcf --out $out.chr$i
   # compress
-  # vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
+  vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
+done
+
+# step 11: ShapeIT for each chromosome
+for i in `seq 1 $numchr`
+do
+  shapeit -B $out.chr$i -O $out.chr$i.phased -T 16
 done
