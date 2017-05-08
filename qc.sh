@@ -1,4 +1,4 @@
-#!/usr/bin
+#!/usr/bin/bash
 # NOTE: Dependencies include:
 # R, plink for data cleaning
 # EIGENSOFT/EIGENSTRAT for PCA
@@ -83,5 +83,7 @@ done
 # step 11: ShapeIT for each chromosome
 for i in `seq 1 $numchr`
 do
-  shapeit -B $out.chr$i -O $out.chr$i.phased -T 16
+  shapeit -B $out.chr$i -O $out.chr$i.phased -T 16 &
 done
+
+wait
