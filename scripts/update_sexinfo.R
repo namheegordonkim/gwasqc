@@ -1,5 +1,6 @@
 library(dplyr)
 
+args <- commandArgs(TRUE)
 fam <- read.table(args[1])
 subinfo <- read.table(args[2], header=T)
 outname <- args[3]
