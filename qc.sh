@@ -73,7 +73,7 @@ Rscript scripts/replace_uncertains_fam.R $tmp2 $tmp2
 # recode
 plink --noweb --bfile $tmp2 --recode --out $tmp2
 
-smartpca.perl -i $tmp2.bed -a $tmp2.bim -b $tmp2.fam -s 6 \
+smartpca.perl -i $tmp2.ped -a $tmp2.map -b $tmp2.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
 
 # step 7b: remove outliers/duplicates from the pruned file
