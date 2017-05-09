@@ -70,6 +70,9 @@ plink --noweb --bfile $tmp1 --rel-cutoff --make-bed --out $tmp2
 # coming back to step 2, mask all the -9s
 Rscript scripts/replace_uncertains_fam.R $tmp2 $tmp2
 
+# recode
+plink --noweb --bfile $tmp2 --recode --out $tmp2
+
 smartpca.perl -i $tmp2.bed -a $tmp2.bim -b $tmp2.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
 
