@@ -33,7 +33,7 @@ rename $dataname $tmp1 $dataname.*
 
 # step 3: sex check on X chromosome
 # tack on sex information to .fam file
-RScript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
 
 plink --noweb --bfile $tmp1 --check-sex --out $out # generates .sexcheck file
 # exclude non-OKs
