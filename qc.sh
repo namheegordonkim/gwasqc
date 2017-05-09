@@ -9,13 +9,21 @@ outdir="./out"
 tmpdir="./tmp"
 
 data=$1
+dataname=$(basename $data)
+
+subinfo=$2
 # output data along with any kind of statistics should be stored in out folder
-out=$outdir/$2
-tmp1=$tmpdir/$2.tmp1
-tmp2=$tmpdir/$2.tmp2
+out=$outdir/$3
+tmp1=$tmpdir/$3.tmp1
+tmp2=$tmpdir/$3.tmp2
+
 
 mkdir -p $outdir
 mkdir -p $tmpdir
+
+# copy all the data to tmp
+cp $data.* $tmp1
+rename $dataname $tmp1 $dataname.*
 
 # step 1: exclude uncertains
 # do nothing--there is no known phenotype associated with the data
@@ -24,9 +32,12 @@ mkdir -p $tmpdir
 # bypass this step, do it immediately before PCA
 
 # step 3: sex check on X chromosome
-plink --noweb --bfile $data --check-sex --out $out # generates .sexcheck file
+# tack on sex information to .fam file
+RScript ./scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+
+plink --noweb --bfile $tmp1 --check-sex --out $out # generates .sexcheck file
 # exclude non-OKs
-plink --noweb --bfile $data --exclude $out.sexcheck --make-bed --out $tmp2
+plink --noweb --bfile $tmp1 --exclude $out.sexcheck --make-bed --out $tmp2
 
 # step 4: remove sex chromosomes and mtDNA from SNP arrays
 plink --noweb --bfile $tmp2 --chr 1-22 --make-bed --out $tmp1
