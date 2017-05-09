@@ -23,7 +23,7 @@ mkdir -p $tmpdir
 
 # copy all the data to tmp
 cp $data.* $tmpdir
-rename $dataname $3.tmp1 $dataname.*
+rename $dataname $3.tmp1 $tmpdir/$dataname.*
 
 # step 1: exclude uncertains
 # do nothing--there is no known phenotype associated with the data
