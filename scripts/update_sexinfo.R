@@ -16,4 +16,4 @@ updated_fam$V5 <- newsex
 
 updated_fam <- updated_fam %>% select(-Gender)
 
-write.table(updated_fam, outname)
+write.table(updated_fam, outname, col.names=F, row.names=F)
