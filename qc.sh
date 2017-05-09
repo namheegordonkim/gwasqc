@@ -22,7 +22,7 @@ mkdir -p $outdir
 mkdir -p $tmpdir
 
 # copy all the data to tmp
-cp $data.* $tmp1
+cp $data.* $tmpdir
 rename $dataname $tmp1 $dataname.*
 
 # step 1: exclude uncertains
