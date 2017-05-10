@@ -98,7 +98,12 @@ done
 # step 11: ShapeIT for each chromosome
 for i in `seq 1 $numchr`
 do
-  shapeit -B $out.chr$i -O $out.chr$i.phased -T 16 &
+  if (($i % 2 == 0))
+  then
+    wait
+  fi
+  shapeit -B $out.chr$i -O $out.chr$i.phased -T 4 &
+  # chunk 2 shapeit jobs at a time
 done
 
 wait
