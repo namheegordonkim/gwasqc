@@ -35,6 +35,15 @@ rename $dataname $3.tmp1 $tmpdir/$dataname.*
 # tack on sex information to .fam file
 echo "Updating gender information"
 Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
+Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
 
 plink --noweb --bfile $tmp1 --check-sex --out $out # generates .sexcheck file
 # exclude non-OKs
