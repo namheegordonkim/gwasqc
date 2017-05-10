@@ -34,7 +34,6 @@ rename $dataname $3.tmp1 $tmpdir/$dataname.*
 # step 3: sex check on X chromosome
 # tack on sex information to .fam file
 echo "Updating gender information"
-echo Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
 Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
 
 plink --noweb --bfile $tmp1 --check-sex --out $out # generates .sexcheck file
