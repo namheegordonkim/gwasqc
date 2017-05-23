@@ -25,6 +25,9 @@ mkdir -p $tmpdir
 cp $data.* $tmpdir
 rename $dataname $3.tmp1 $tmpdir/$dataname.*
 
+# for refernce, keep an initial QC metric report
+plink --bfile $data --missing --out $out.pre
+
 # step 1: exclude uncertains
 # do nothing--there is no known phenotype associated with the data
 
@@ -96,15 +99,3 @@ do
   vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
 done
 
-# step 11: ShapeIT for each chromosome
-for i in `seq 1 $numchr`
-do
-  if (($i % 2 == 0))
-  then
-    wait
-  fi
-  shapeit -B $out.chr$i -O $out.chr$i.phased -T 4 &
-  # chunk 2 shapeit jobs at a time
-done
-
-wait
