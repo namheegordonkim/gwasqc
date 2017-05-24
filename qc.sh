@@ -26,7 +26,7 @@ cp $data.* $tmpdir
 rename $dataname $3.tmp1 $tmpdir/$dataname.*
 
 # for refernce, keep an initial QC metric report
-plink --bfile $data --missing --out $out.pre
+plink --bfile $data --missing --freq --het --out $out.pre
 
 # step 1: exclude uncertains
 # do nothing--there is no known phenotype associated with the data
@@ -40,8 +40,6 @@ echo "Updating gender information"
 Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
 
 plink --noweb --bfile $tmp1 --check-sex --out $out # generates .sexcheck file
-# exclude non-OKs
-plink --noweb --bfile $tmp1 --must-have-sex --exclude $out.sexcheck --make-bed --out $tmp2
 
 # step 4: remove sex chromosomes and mtDNA from SNP arrays
 plink --noweb --bfile $tmp2 --chr 1-22 --make-bed --out $tmp1
