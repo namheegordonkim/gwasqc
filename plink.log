@@ -1,0 +1,13 @@
+PLINK v1.90b4.1 64-bit (30 Mar 2017)
+Options in effect:
+  --bfile ./tmp/testout.tmp2.pruned
+  --noweb
+
+Hostname: node-13.hpc.local
+Working directory: /nfs/nkim412/nkim412/gwasqc
+Start time: Fri May 26 17:46:22 2017
+
+Note: --noweb has no effect since no web check is implemented yet.
+Warning: No output requested.  Exiting.
+
+End time: Fri May 26 17:46:22 2017
