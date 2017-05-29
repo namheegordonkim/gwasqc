@@ -39,8 +39,9 @@ plink --bfile $data --missing --freq --het --out $out.pre
 echo "Updating gender information"
 Rscript scripts/update_sexinfo.R $tmp1.fam $subinfo $tmp1.fam
 
-plink --noweb --bfile $tmp1 --check-sex --out $out # generates .sexcheck file
-plink --bfile $tmp1 --remove $out.nosex --make-bed --out $tmp2  # removes ambiguous individuals
+plink --noweb --bfile $tmp1 --check-sex --out $tmp1 # generates .sexcheck file
+grep PROBLEM $tmp1.sexcheck > $tmp1.sexprobs
+plink --bfile $tmp1 --remove $tmp1.sexprobs --make-bed --out $tmp2  # removes ambiguous individuals
 
 # step 4: remove sex chromosomes and mtDNA from SNP arrays
 plink --noweb --bfile $tmp2 --chr 1-22 --make-bed --out $tmp1
