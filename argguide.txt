@@ -1,0 +1,3 @@
+het-cut.R <hetname> <outname>
+
+
