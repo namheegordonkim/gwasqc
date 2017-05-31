@@ -1,10 +1,15 @@
 #!/usr/bin/bash
 
+infile=$1
+out=./out/$2
+tmp1=./tmp/$out.tmp1
+tmp2=./tmp/$out.tmp2
+
 # === LD-Based Pruning and PCA steps (don't use for imputation) ===
 
 # step 5: SNP pruning by LD (specified in the doc)
-plink --noweb --bfile $tmp2 --indep-pairwise 1500 150 0.1 --out $out
-plink --noweb --bfile $tmp2 --extract $out.prune.in --mind 0.1 --make-bed --out $tmp1.pruned
+plink --noweb --bfile $infile --indep-pairwise 1500 150 0.1 --out $out
+plink --noweb --bfile $infile --extract $out.prune.in --mind 0.1 --make-bed --out $tmp1.pruned
 
 # step 6: cryptic relatedness/IBD check
 # IBD check (make .genome file)
