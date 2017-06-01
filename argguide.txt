@@ -1,3 +1,4 @@
 het-cut.R <hetname> <outname>
-
+ibd-cut.R <genome> <outname>
+pca-cut.R <fam> <pca> <out>
 

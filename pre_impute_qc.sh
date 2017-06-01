@@ -46,35 +46,32 @@ plink --bfile $tmp1 --remove $tmp1.sexprobs --make-bed --out $tmp2  # removes am
 # step 4: remove sex chromosomes and mtDNA from SNP arrays
 plink --noweb --bfile $tmp2 --chr 1-22 --make-bed --out $tmp1
 
-# step 5: heterozygosity statistics and het-based filtering
+# step 5: MAF, HWE, MIND, GENO (missingness and HWE based chopping)
+plink --noweb --bfile $tmp2 --maf 0.01 --hwe 0.000005 --mind 0.05 --geno 0.05 --make-bed --out $tmp1
+
+# step 6: heterozygosity statistics and het-based filtering
 plink --noweb --bfile $tmp1 --het --out $tmp1 # creates .het file
 plink --noweb --bfile $tmp1 --missing --out $tmp1 # creates .imiss and .lmiss files
 Rscript ./scripts/imiss-vs-het-custom.R $tmp1.imiss $tmp1.het $tmp1.imiss-vs-het.pdf # created a plot showing heterozygosity cutoffs
 # het-based chop
 Rscript ./scripts/het-cut.R $tmp1.het $tmp1.hetcuts
-plink --noweb --bfile $tmp1 --remove $tmp1.hetcuts --make-bed --out $tmp2
+plink --noweb --bfile $tmp1 --remove $tmp1.hetcuts --make-bed --out $out
 
-
-# === LD-Based Pruning and PCA steps (don't use for imputation) ===
-
-# step 5: SNP pruning by LD (specified in the doc)
+# step 6: LD-Based Pruning, setting up for IBD and PCA
 plink --noweb --bfile $tmp2 --indep-pairwise 1500 150 0.1 --out $out
 plink --noweb --bfile $tmp2 --extract $out.prune.in --mind 0.1 --make-bed --out $tmp1.pruned
 
-# step 6: cryptic relatedness/IBD check
+# step 7: cryptic relatedness/IBD check
 # IBD check (make .genome file)
-plink --noweb --bfile $tmp1.pruned --genome --min 0.05 --make-bed --out $tmp2.pruned
-# remove relateds
-plink --noweb --bfile $tmp2.pruned --rel-cutoff --make-bed --out $tmp1.pruned
+plink --noweb --bfile $tmp1.pruned --genome --min 0.05 --make-bed --out $out
 
-# step 7: PCA by EIGENSTRAT
-
+# step 8: PCA by EIGENSTRAT
 # coming back to step 2, mask all the -9s
 Rscript scripts/replace_uncertains_fam.R $tmp1.pruned $tmp1.pruned
 
-# step 7b: remove outliers/duplicates from the pruned file
+# step 8b: remove outliers/duplicates from the pruned file
+# I'm not sure if this is actually what they mean...
 plink --noweb --bfile $tmp1.pruned --list-duplicate-vars ids-only suppress-first --out $tmp1.pruned
-
 plink --noweb --bfile $tmp1.pruned --remove $tmp1.pruned.dupvar --make-bed --out $tmp2.pruned
 
 # recode
@@ -83,15 +80,10 @@ plink --noweb --bfile $tmp2.pruned --recode --out $tmp2.pruned
 smartpca.perl -i $tmp2.pruned.ped -a $tmp2.pruned.map -b $tmp2.pruned.fam -s 6 \
 -e $out.eval -l $out.elog -o $out.pca -p $out.plot
 
-# === End of PCA Steps ===
-
-# step 8: MAF, HWE, MND, GENO
-plink --noweb --bfile $tmp2 --maf 0.01 --hwe 0.000005 --mind 0.05 --geno 0.05 --make-bed --out $out
-
-# step 9: frequency check after-the-fact
+# step 10: frequency check after-the-fact
 plink --noweb --bfile $out --freq --out $out
 
-# step 10: split by chromosome and recode into vcf
+# step 11: split by chromosome and recode into vcf
 numchr=22
 for i in `seq 1 $numchr`
 do
