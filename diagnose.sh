@@ -8,7 +8,8 @@ mkdir -p $diagdir
 
 while [ $# -gt 0 ]
 do
-	plink --bfile $1 --missing --het --out $diagdir/all
+	outname=$(basename $1)
+	plink --bfile $1 --missing --het --out $diagdir/$outname
 	shift
 done
 
