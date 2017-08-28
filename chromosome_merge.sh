@@ -11,9 +11,7 @@
 
 # Output: <dataset 1>.<dataset 2>...chr<num> in .bed, .bim, .fam format in
 #         output directory
-
-outdir="./out"
-tmpdir="./tmp"
+source /params/pre_impute_params
 
 mkdir -p $tmpdir
 
