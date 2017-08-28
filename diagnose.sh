@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+source ./params/pre_impute_params
 
 numargs=$#
 diagdir="./diag"
@@ -15,5 +16,4 @@ done
 
 Rscript ./scripts/merge-reports-with-header.R $diagdir/*.imiss $diagdir/all.imiss
 Rscript ./scripts/merge-reports-with-header.R $diagdir/*.het $diagdir/all.het
-Rscript ./scripts/imiss-vs-het-custom.R $diagdir/all.imiss $diagdir/all.het diag-graph.pdf
-
+Rscript ./scripts/imiss-vs-het-custom.R $diagdir/all.imiss $diagdir/all.het $hetcut_multiplier diag-graph.pdf

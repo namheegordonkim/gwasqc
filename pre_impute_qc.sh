@@ -4,9 +4,7 @@
 # R, plink for data cleaning
 # EIGENSOFT/EIGENSTRAT for PCA
 # ShapeIT, IMPUTE2 for imputation
-
-outdir="./out"
-tmpdir="./tmp"
+source ./params/pre_impute_params
 
 data=$1
 dataname=$(basename $data)
@@ -16,7 +14,6 @@ subinfo=$2
 out=$outdir/$3
 tmp1=$tmpdir/$3.tmp1
 tmp2=$tmpdir/$3.tmp2
-
 
 mkdir -p $outdir
 mkdir -p $tmpdir
@@ -49,9 +46,9 @@ plink --noweb --bfile $tmp2 --chr 1-22 --make-bed --out $tmp1
 # step 5: heterozygosity statistics and het-based filtering
 plink --noweb --bfile $tmp1 --het --out $tmp1 # creates .het file
 plink --noweb --bfile $tmp1 --missing --out $tmp1 # creates .imiss and .lmiss files
-Rscript ./scripts/imiss-vs-het-custom.R $tmp1.imiss $tmp1.het $tmp1.imiss-vs-het.pdf # created a plot showing heterozygosity cutoffs
+Rscript ./scripts/imiss-vs-het-custom.R $tmp1.imiss $tmp1.het $hetcut_multiplier $tmp1.imiss-vs-het.pdf # created a plot showing heterozygosity cutoffs
 # het-based chop
-Rscript ./scripts/het-cut.R $tmp1.het $tmp1.hetcuts
+Rscript ./scripts/het-cut.R $tmp1.het $hetcut_multiplier $tmp1.hetcuts
 plink --noweb --bfile $tmp1 --remove $tmp1.hetcuts --make-bed --out $tmp2
 
 # step 6: MAF, HWE, MIND, GENO (missingness and HWE based chopping)
@@ -92,4 +89,3 @@ do
   # compress
   vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
 done
-
