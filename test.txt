@@ -1,1315 +1,0 @@
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.pre.log.
-Options in effect:
-  --bfile /nfs/nkim412/nkim412/genotype/raw/IMAGEN_20090723
-  --freq
-  --het
-  --missing
-  --out ./out/testout.pre
-
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-582892 variants loaded from .bim file.
-456 people (0 males, 0 females, 456 ambiguous) loaded from .fam.
-Ambiguous sex IDs written to ./out/testout.pre.nosex .
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 456 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.996015.
---freq: Allele frequencies (founders only) written to ./out/testout.pre.frq .
---missing: Sample missing data report written to ./out/testout.pre.imiss, and
-variant-based missing data report written to ./out/testout.pre.lmiss.
-582892 variants and 456 people pass filters and QC.
-Note: No phenotypes present.
---het: 561444 variants scanned, report written to ./out/testout.pre.het .
-Updating gender information
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp1.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp1
-  --check-sex
-  --noweb
-  --out ./tmp/testout.tmp1
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-582892 variants loaded from .bim file.
-456 people (216 males, 228 females, 12 ambiguous) loaded from .fam.
-Ambiguous sex IDs written to ./tmp/testout.tmp1.nosex .
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 456 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.996014.
-582892 variants and 456 people pass filters and QC.
-Note: No phenotypes present.
---check-sex: 14459 Xchr and 0 Ychr variant(s) scanned, 13 problems detected.
-Report written to ./tmp/testout.tmp1.sexcheck .
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp2.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp1
-  --make-bed
-  --out ./tmp/testout.tmp2
-  --remove ./tmp/testout.tmp1.sexprobs
-
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-582892 variants loaded from .bim file.
-456 people (216 males, 228 females, 12 ambiguous) loaded from .fam.
-Ambiguous sex IDs written to ./tmp/testout.tmp2.nosex .
---remove: 443 people remaining.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 443 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate in remaining samples is 0.996014.
-582892 variants and 443 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./tmp/testout.tmp2.bed + ./tmp/testout.tmp2.bim +
-./tmp/testout.tmp2.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp1.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp2
-  --chr 1-22
-  --make-bed
-  --noweb
-  --out ./tmp/testout.tmp1
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-567248 out of 582892 variants loaded from .bim file.
-443 people (216 males, 227 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 443 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.996081.
-567248 variants and 443 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./tmp/testout.tmp1.bed + ./tmp/testout.tmp1.bim +
-./tmp/testout.tmp1.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp1.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp1
-  --het
-  --noweb
-  --out ./tmp/testout.tmp1
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-567248 variants loaded from .bim file.
-443 people (216 males, 227 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 443 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.996081.
-567248 variants and 443 people pass filters and QC.
-Note: No phenotypes present.
---het: 560960 variants scanned, report written to ./tmp/testout.tmp1.het .
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp1.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp1
-  --missing
-  --noweb
-  --out ./tmp/testout.tmp1
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-567248 variants loaded from .bim file.
-443 people (216 males, 227 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 443 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.996081.
---missing: Sample missing data report written to ./tmp/testout.tmp1.imiss, and
-variant-based missing data report written to ./tmp/testout.tmp1.lmiss.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp2.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp1
-  --make-bed
-  --noweb
-  --out ./tmp/testout.tmp2
-  --remove ./tmp/testout.tmp1.hetcuts
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-567248 variants loaded from .bim file.
-443 people (216 males, 227 females) loaded from .fam.
---remove: 423 people remaining.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate in remaining samples is 0.996045.
-567248 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./tmp/testout.tmp2.bed + ./tmp/testout.tmp2.bim +
-./tmp/testout.tmp2.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp2
-  --indep-pairwise 1500 150 0.1
-  --noweb
-  --out ./out/testout
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-567248 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.996045.
-567248 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 39584 variants from chromosome 1, leaving 4824.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 42609 variants from chromosome 2, leaving 4418.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 35276 variants from chromosome 3, leaving 3861.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 31451 variants from chromosome 4, leaving 3533.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 31757 variants from chromosome 5, leaving 3553.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 36316 variants from chromosome 6, leaving 3463.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 28503 variants from chromosome 7, leaving 3211.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 29240 variants from chromosome 8, leaving 2874.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 24528 variants from chromosome 9, leaving 2781.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 27185 variants from chromosome 10, leaving 3053.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 25344 variants from chromosome 11, leaving 2825.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%94%95%96%97%98%99%Pruned 25165 variants from chromosome 12, leaving 2941.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%95%96%97%98%99%Pruned 19399 variants from chromosome 13, leaving 2164.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 16829 variants from chromosome 14, leaving 2080.
-1%2%3%4%5%6%7%8%9%10%11%12%12%13%14%15%16%17%18%19%20%21%22%23%24%25%25%26%27%28%29%30%31%32%33%34%35%36%37%38%38%39%40%41%42%43%44%45%46%47%48%49%50%51%51%52%53%54%55%56%57%58%59%60%61%62%63%64%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 15327 variants from chromosome 15, leaving 1982.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%91%92%93%94%95%96%97%98%99%Pruned 15165 variants from chromosome 16, leaving 2118.
-0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 13079 variants from chromosome 17, leaving 2009.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 15059 variants from chromosome 18, leaving 1977.
-1%2%4%5%7%8%10%11%13%14%16%17%19%20%22%23%25%26%28%29%31%32%34%35%37%38%40%41%43%44%46%47%49%50%51%53%54%56%57%59%60%62%63%65%66%68%69%71%72%74%75%77%78%80%81%83%84%86%87%89%90%92%93%95%96%98%99%Pruned 8437 variants from chromosome 19, leaving 1665.
-1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%88%89%90%91%92%93%94%95%96%97%98%99%Pruned 12734 variants from chromosome 20, leaving 1753.
-1%3%5%7%8%10%12%14%16%17%19%21%23%24%26%28%30%32%33%35%37%39%40%42%44%46%48%49%51%53%55%56%58%60%62%64%65%67%69%71%72%74%76%78%80%81%83%85%87%88%90%92%94%96%97%99%Pruned 7428 variants from chromosome 21, leaving 1001.
-1%3%5%6%8%10%12%13%15%17%18%20%22%24%25%27%29%30%32%34%36%37%39%41%42%44%46%48%49%51%53%54%56%58%60%61%63%65%66%68%70%72%73%75%77%78%80%82%84%85%87%89%90%92%94%96%97%99%Pruned 7613 variants from chromosome 22, leaving 1134.
-Pruning complete.  508028 of 567248 variants removed.
-Writing...Marker lists written to ./out/testout.prune.in and ./out/testout.prune.out .
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp1.pruned.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp2
-  --extract ./out/testout.prune.in
-  --make-bed
-  --mind 0.1
-  --noweb
-  --out ./tmp/testout.tmp1.pruned
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-567248 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
---extract: 59220 variants remaining.
-0 people removed due to missing genotype data (--mind).
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.995679.
-59220 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./tmp/testout.tmp1.pruned.bed + ./tmp/testout.tmp1.pruned.bim +
-./tmp/testout.tmp1.pruned.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp2.pruned.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp1.pruned
-  --genome
-  --make-bed
-  --min 0.05
-  --noweb
-  --out ./tmp/testout.tmp2.pruned
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-59220 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using up to 2 threads (change this with --threads).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.995679.
-59220 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./tmp/testout.tmp2.pruned.bed + ./tmp/testout.tmp2.pruned.bim +
-./tmp/testout.tmp2.pruned.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-1152 markers complete.2304 markers complete.3456 markers complete.4608 markers complete.5760 markers complete.6912 markers complete.8064 markers complete.9216 markers complete.10368 markers complete.11520 markers complete.12672 markers complete.13824 markers complete.14976 markers complete.16128 markers complete.17280 markers complete.18432 markers complete.19584 markers complete.20736 markers complete.21888 markers complete.23040 markers complete.24192 markers complete.25344 markers complete.26496 markers complete.27648 markers complete.28800 markers complete.29952 markers complete.31104 markers complete.32256 markers complete.33408 markers complete.34560 markers complete.35712 markers complete.36864 markers complete.38016 markers complete.39168 markers complete.40320 markers complete.41472 markers complete.42624 markers complete.43776 markers complete.44928 markers complete.46080 markers complete.47232 markers complete.48384 markers complete.49536 markers complete.50688 markers complete.51840 markers complete.52992 markers complete.54144 markers complete.55296 markers complete.56448 markers complete.57600 markers complete.58752 markers complete.59220 markers complete.IBD calculations complete.  
-Writing... 99%Finished writing ./tmp/testout.tmp2.pruned.genome .
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp1.pruned.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp2.pruned
-  --make-bed
-  --noweb
-  --out ./tmp/testout.tmp1.pruned
-  --rel-cutoff
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-59220 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using up to 2 threads (change this with --threads).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.995679.
-59220 variants and 423 people pass filters and QC (before --rel-cutoff).
-Note: No phenotypes present.
-60 markers complete.120 markers complete.180 markers complete.240 markers complete.300 markers complete.360 markers complete.420 markers complete.480 markers complete.540 markers complete.600 markers complete.660 markers complete.720 markers complete.780 markers complete.840 markers complete.900 markers complete.960 markers complete.1020 markers complete.1080 markers complete.1140 markers complete.1200 markers complete.1260 markers complete.1320 markers complete.1380 markers complete.1440 markers complete.1500 markers complete.1560 markers complete.1620 markers complete.1680 markers complete.1740 markers complete.1800 markers complete.1860 markers complete.1920 markers complete.1980 markers complete.2040 markers complete.2100 markers complete.2160 markers complete.2220 markers complete.2280 markers complete.2340 markers complete.2400 markers complete.2460 markers complete.2520 markers complete.2580 markers complete.2640 markers complete.2700 markers complete.2760 markers complete.2820 markers complete.2880 markers complete.2940 markers complete.3000 markers complete.3060 markers complete.3120 markers complete.3180 markers complete.3240 markers complete.3300 markers complete.3360 markers complete.3420 markers complete.3480 markers complete.3540 markers complete.3600 markers complete.3660 markers complete.3720 markers complete.3780 markers complete.3840 markers complete.3900 markers complete.3960 markers complete.4020 markers complete.4080 markers complete.4140 markers complete.4200 markers complete.4260 markers complete.4320 markers complete.4380 markers complete.4440 markers complete.4500 markers complete.4560 markers complete.4620 markers complete.4680 markers complete.4740 markers complete.4800 markers complete.4860 markers complete.4920 markers complete.4980 markers complete.5040 markers complete.5100 markers complete.5160 markers complete.5220 markers complete.5280 markers complete.5340 markers complete.5400 markers complete.5460 markers complete.5520 markers complete.5580 markers complete.5640 markers complete.5700 markers complete.5760 markers complete.5820 markers complete.5880 markers complete.5940 markers complete.6000 markers complete.6060 markers complete.6120 markers complete.6180 markers complete.6240 markers complete.6300 markers complete.6360 markers complete.6420 markers complete.6480 markers complete.6540 markers complete.6600 markers complete.6660 markers complete.6720 markers complete.6780 markers complete.6840 markers complete.6900 markers complete.6960 markers complete.7020 markers complete.7080 markers complete.7140 markers complete.7200 markers complete.7260 markers complete.7320 markers complete.7380 markers complete.7440 markers complete.7500 markers complete.7560 markers complete.7620 markers complete.7680 markers complete.7740 markers complete.7800 markers complete.7860 markers complete.7920 markers complete.7980 markers complete.8040 markers complete.8100 markers complete.8160 markers complete.8220 markers complete.8280 markers complete.8340 markers complete.8400 markers complete.8460 markers complete.8520 markers complete.8580 markers complete.8640 markers complete.8700 markers complete.8760 markers complete.8820 markers complete.8880 markers complete.8940 markers complete.9000 markers complete.9060 markers complete.9120 markers complete.9180 markers complete.9240 markers complete.9300 markers complete.9360 markers complete.9420 markers complete.9480 markers complete.9540 markers complete.9600 markers complete.9660 markers complete.9720 markers complete.9780 markers complete.9840 markers complete.9900 markers complete.9960 markers complete.10020 markers complete.10080 markers complete.10140 markers complete.10200 markers complete.10260 markers complete.10320 markers complete.10380 markers complete.10440 markers complete.10500 markers complete.10560 markers complete.10620 markers complete.10680 markers complete.10740 markers complete.10800 markers complete.10860 markers complete.10920 markers complete.10980 markers complete.11040 markers complete.11100 markers complete.11160 markers complete.11220 markers complete.11280 markers complete.11340 markers complete.11400 markers complete.11460 markers complete.11520 markers complete.11580 markers complete.11640 markers complete.11700 markers complete.11760 markers complete.11820 markers complete.11880 markers complete.11940 markers complete.12000 markers complete.12060 markers complete.12120 markers complete.12180 markers complete.12240 markers complete.12300 markers complete.12360 markers complete.12420 markers complete.12480 markers complete.12540 markers complete.12600 markers complete.12660 markers complete.12720 markers complete.12780 markers complete.12840 markers complete.12900 markers complete.12960 markers complete.13020 markers complete.13080 markers complete.13140 markers complete.13200 markers complete.13260 markers complete.13320 markers complete.13380 markers complete.13440 markers complete.13500 markers complete.13560 markers complete.13620 markers complete.13680 markers complete.13740 markers complete.13800 markers complete.13860 markers complete.13920 markers complete.13980 markers complete.14040 markers complete.14100 markers complete.14160 markers complete.14220 markers complete.14280 markers complete.14340 markers complete.14400 markers complete.14460 markers complete.14520 markers complete.14580 markers complete.14640 markers complete.14700 markers complete.14760 markers complete.14820 markers complete.14880 markers complete.14940 markers complete.15000 markers complete.15060 markers complete.15120 markers complete.15180 markers complete.15240 markers complete.15300 markers complete.15360 markers complete.15420 markers complete.15480 markers complete.15540 markers complete.15600 markers complete.15660 markers complete.15720 markers complete.15780 markers complete.15840 markers complete.15900 markers complete.15960 markers complete.16020 markers complete.16080 markers complete.16140 markers complete.16200 markers complete.16260 markers complete.16320 markers complete.16380 markers complete.16440 markers complete.16500 markers complete.16560 markers complete.16620 markers complete.16680 markers complete.16740 markers complete.16800 markers complete.16860 markers complete.16920 markers complete.16980 markers complete.17040 markers complete.17100 markers complete.17160 markers complete.17220 markers complete.17280 markers complete.17340 markers complete.17400 markers complete.17460 markers complete.17520 markers complete.17580 markers complete.17640 markers complete.17700 markers complete.17760 markers complete.17820 markers complete.17880 markers complete.17940 markers complete.18000 markers complete.18060 markers complete.18120 markers complete.18180 markers complete.18240 markers complete.18300 markers complete.18360 markers complete.18420 markers complete.18480 markers complete.18540 markers complete.18600 markers complete.18660 markers complete.18720 markers complete.18780 markers complete.18840 markers complete.18900 markers complete.18960 markers complete.19020 markers complete.19080 markers complete.19140 markers complete.19200 markers complete.19260 markers complete.19320 markers complete.19380 markers complete.19440 markers complete.19500 markers complete.19560 markers complete.19620 markers complete.19680 markers complete.19740 markers complete.19800 markers complete.19860 markers complete.19920 markers complete.19980 markers complete.20040 markers complete.20100 markers complete.20160 markers complete.20220 markers complete.20280 markers complete.20340 markers complete.20400 markers complete.20460 markers complete.20520 markers complete.20580 markers complete.20640 markers complete.20700 markers complete.20760 markers complete.20820 markers complete.20880 markers complete.20940 markers complete.21000 markers complete.21060 markers complete.21120 markers complete.21180 markers complete.21240 markers complete.21300 markers complete.21360 markers complete.21420 markers complete.21480 markers complete.21540 markers complete.21600 markers complete.21660 markers complete.21720 markers complete.21780 markers complete.21840 markers complete.21900 markers complete.21960 markers complete.22020 markers complete.22080 markers complete.22140 markers complete.22200 markers complete.22260 markers complete.22320 markers complete.22380 markers complete.22440 markers complete.22500 markers complete.22560 markers complete.22620 markers complete.22680 markers complete.22740 markers complete.22800 markers complete.22860 markers complete.22920 markers complete.22980 markers complete.23040 markers complete.23100 markers complete.23160 markers complete.23220 markers complete.23280 markers complete.23340 markers complete.23400 markers complete.23460 markers complete.23520 markers complete.23580 markers complete.23640 markers complete.23700 markers complete.23760 markers complete.23820 markers complete.23880 markers complete.23940 markers complete.24000 markers complete.24060 markers complete.24120 markers complete.24180 markers complete.24240 markers complete.24300 markers complete.24360 markers complete.24420 markers complete.24480 markers complete.24540 markers complete.24600 markers complete.24660 markers complete.24720 markers complete.24780 markers complete.24840 markers complete.24900 markers complete.24960 markers complete.25020 markers complete.25080 markers complete.25140 markers complete.25200 markers complete.25260 markers complete.25320 markers complete.25380 markers complete.25440 markers complete.25500 markers complete.25560 markers complete.25620 markers complete.25680 markers complete.25740 markers complete.25800 markers complete.25860 markers complete.25920 markers complete.25980 markers complete.26040 markers complete.26100 markers complete.26160 markers complete.26220 markers complete.26280 markers complete.26340 markers complete.26400 markers complete.26460 markers complete.26520 markers complete.26580 markers complete.26640 markers complete.26700 markers complete.26760 markers complete.26820 markers complete.26880 markers complete.26940 markers complete.27000 markers complete.27060 markers complete.27120 markers complete.27180 markers complete.27240 markers complete.27300 markers complete.27360 markers complete.27420 markers complete.27480 markers complete.27540 markers complete.27600 markers complete.27660 markers complete.27720 markers complete.27780 markers complete.27840 markers complete.27900 markers complete.27960 markers complete.28020 markers complete.28080 markers complete.28140 markers complete.28200 markers complete.28260 markers complete.28320 markers complete.28380 markers complete.28440 markers complete.28500 markers complete.28560 markers complete.28620 markers complete.28680 markers complete.28740 markers complete.28800 markers complete.28860 markers complete.28920 markers complete.28980 markers complete.29040 markers complete.29100 markers complete.29160 markers complete.29220 markers complete.29280 markers complete.29340 markers complete.29400 markers complete.29460 markers complete.29520 markers complete.29580 markers complete.29640 markers complete.29700 markers complete.29760 markers complete.29820 markers complete.29880 markers complete.29940 markers complete.30000 markers complete.30060 markers complete.30120 markers complete.30180 markers complete.30240 markers complete.30300 markers complete.30360 markers complete.30420 markers complete.30480 markers complete.30540 markers complete.30600 markers complete.30660 markers complete.30720 markers complete.30780 markers complete.30840 markers complete.30900 markers complete.30960 markers complete.31020 markers complete.31080 markers complete.31140 markers complete.31200 markers complete.31260 markers complete.31320 markers complete.31380 markers complete.31440 markers complete.31500 markers complete.31560 markers complete.31620 markers complete.31680 markers complete.31740 markers complete.31800 markers complete.31860 markers complete.31920 markers complete.31980 markers complete.32040 markers complete.32100 markers complete.32160 markers complete.32220 markers complete.32280 markers complete.32340 markers complete.32400 markers complete.32460 markers complete.32520 markers complete.32580 markers complete.32640 markers complete.32700 markers complete.32760 markers complete.32820 markers complete.32880 markers complete.32940 markers complete.33000 markers complete.33060 markers complete.33120 markers complete.33180 markers complete.33240 markers complete.33300 markers complete.33360 markers complete.33420 markers complete.33480 markers complete.33540 markers complete.33600 markers complete.33660 markers complete.33720 markers complete.33780 markers complete.33840 markers complete.33900 markers complete.33960 markers complete.34020 markers complete.34080 markers complete.34140 markers complete.34200 markers complete.34260 markers complete.34320 markers complete.34380 markers complete.34440 markers complete.34500 markers complete.34560 markers complete.34620 markers complete.34680 markers complete.34740 markers complete.34800 markers complete.34860 markers complete.34920 markers complete.34980 markers complete.35040 markers complete.35100 markers complete.35160 markers complete.35220 markers complete.35280 markers complete.35340 markers complete.35400 markers complete.35460 markers complete.35520 markers complete.35580 markers complete.35640 markers complete.35700 markers complete.35760 markers complete.35820 markers complete.35880 markers complete.35940 markers complete.36000 markers complete.36060 markers complete.36120 markers complete.36180 markers complete.36240 markers complete.36300 markers complete.36360 markers complete.36420 markers complete.36480 markers complete.36540 markers complete.36600 markers complete.36660 markers complete.36720 markers complete.36780 markers complete.36840 markers complete.36900 markers complete.36960 markers complete.37020 markers complete.37080 markers complete.37140 markers complete.37200 markers complete.37260 markers complete.37320 markers complete.37380 markers complete.37440 markers complete.37500 markers complete.37560 markers complete.37620 markers complete.37680 markers complete.37740 markers complete.37800 markers complete.37860 markers complete.37920 markers complete.37980 markers complete.38040 markers complete.38100 markers complete.38160 markers complete.38220 markers complete.38280 markers complete.38340 markers complete.38400 markers complete.38460 markers complete.38520 markers complete.38580 markers complete.38640 markers complete.38700 markers complete.38760 markers complete.38820 markers complete.38880 markers complete.38940 markers complete.39000 markers complete.39060 markers complete.39120 markers complete.39180 markers complete.39240 markers complete.39300 markers complete.39360 markers complete.39420 markers complete.39480 markers complete.39540 markers complete.39600 markers complete.39660 markers complete.39720 markers complete.39780 markers complete.39840 markers complete.39900 markers complete.39960 markers complete.40020 markers complete.40080 markers complete.40140 markers complete.40200 markers complete.40260 markers complete.40320 markers complete.40380 markers complete.40440 markers complete.40500 markers complete.40560 markers complete.40620 markers complete.40680 markers complete.40740 markers complete.40800 markers complete.40860 markers complete.40920 markers complete.40980 markers complete.41040 markers complete.41100 markers complete.41160 markers complete.41220 markers complete.41280 markers complete.41340 markers complete.41400 markers complete.41460 markers complete.41520 markers complete.41580 markers complete.41640 markers complete.41700 markers complete.41760 markers complete.41820 markers complete.41880 markers complete.41940 markers complete.42000 markers complete.42060 markers complete.42120 markers complete.42180 markers complete.42240 markers complete.42300 markers complete.42360 markers complete.42420 markers complete.42480 markers complete.42540 markers complete.42600 markers complete.42660 markers complete.42720 markers complete.42780 markers complete.42840 markers complete.42900 markers complete.42960 markers complete.43020 markers complete.43080 markers complete.43140 markers complete.43200 markers complete.43260 markers complete.43320 markers complete.43380 markers complete.43440 markers complete.43500 markers complete.43560 markers complete.43620 markers complete.43680 markers complete.43740 markers complete.43800 markers complete.43860 markers complete.43920 markers complete.43980 markers complete.44040 markers complete.44100 markers complete.44160 markers complete.44220 markers complete.44280 markers complete.44340 markers complete.44400 markers complete.44460 markers complete.44520 markers complete.44580 markers complete.44640 markers complete.44700 markers complete.44760 markers complete.44820 markers complete.44880 markers complete.44940 markers complete.45000 markers complete.45060 markers complete.45120 markers complete.45180 markers complete.45240 markers complete.45300 markers complete.45360 markers complete.45420 markers complete.45480 markers complete.45540 markers complete.45600 markers complete.45660 markers complete.45720 markers complete.45780 markers complete.45840 markers complete.45900 markers complete.45960 markers complete.46020 markers complete.46080 markers complete.46140 markers complete.46200 markers complete.46260 markers complete.46320 markers complete.46380 markers complete.46440 markers complete.46500 markers complete.46560 markers complete.46620 markers complete.46680 markers complete.46740 markers complete.46800 markers complete.46860 markers complete.46920 markers complete.46980 markers complete.47040 markers complete.47100 markers complete.47160 markers complete.47220 markers complete.47280 markers complete.47340 markers complete.47400 markers complete.47460 markers complete.47520 markers complete.47580 markers complete.47640 markers complete.47700 markers complete.47760 markers complete.47820 markers complete.47880 markers complete.47940 markers complete.48000 markers complete.48060 markers complete.48120 markers complete.48180 markers complete.48240 markers complete.48300 markers complete.48360 markers complete.48420 markers complete.48480 markers complete.48540 markers complete.48600 markers complete.48660 markers complete.48720 markers complete.48780 markers complete.48840 markers complete.48900 markers complete.48960 markers complete.49020 markers complete.49080 markers complete.49140 markers complete.49200 markers complete.49260 markers complete.49320 markers complete.49380 markers complete.49440 markers complete.49500 markers complete.49560 markers complete.49620 markers complete.49680 markers complete.49740 markers complete.49800 markers complete.49860 markers complete.49920 markers complete.49980 markers complete.50040 markers complete.50100 markers complete.50160 markers complete.50220 markers complete.50280 markers complete.50340 markers complete.50400 markers complete.50460 markers complete.50520 markers complete.50580 markers complete.50640 markers complete.50700 markers complete.50760 markers complete.50820 markers complete.50880 markers complete.50940 markers complete.51000 markers complete.51060 markers complete.51120 markers complete.51180 markers complete.51240 markers complete.51300 markers complete.51360 markers complete.51420 markers complete.51480 markers complete.51540 markers complete.51600 markers complete.51660 markers complete.51720 markers complete.51780 markers complete.51840 markers complete.51900 markers complete.51960 markers complete.52020 markers complete.52080 markers complete.52140 markers complete.52200 markers complete.52260 markers complete.52320 markers complete.52380 markers complete.52440 markers complete.52500 markers complete.52560 markers complete.52620 markers complete.52680 markers complete.52740 markers complete.52800 markers complete.52860 markers complete.52920 markers complete.52980 markers complete.53040 markers complete.53100 markers complete.53160 markers complete.53220 markers complete.53280 markers complete.53340 markers complete.53400 markers complete.53460 markers complete.53520 markers complete.53580 markers complete.53640 markers complete.53700 markers complete.53760 markers complete.53820 markers complete.53880 markers complete.53940 markers complete.54000 markers complete.54060 markers complete.54120 markers complete.54180 markers complete.54240 markers complete.54300 markers complete.54360 markers complete.54420 markers complete.54480 markers complete.54540 markers complete.54600 markers complete.54660 markers complete.54720 markers complete.54780 markers complete.54840 markers complete.54900 markers complete.54960 markers complete.55020 markers complete.55080 markers complete.55140 markers complete.55200 markers complete.55260 markers complete.55320 markers complete.55380 markers complete.55440 markers complete.55500 markers complete.55560 markers complete.55620 markers complete.55680 markers complete.55740 markers complete.55800 markers complete.55860 markers complete.55920 markers complete.55980 markers complete.56040 markers complete.56100 markers complete.56160 markers complete.56220 markers complete.56280 markers complete.56340 markers complete.56400 markers complete.56460 markers complete.56520 markers complete.56580 markers complete.56640 markers complete.56700 markers complete.56760 markers complete.56820 markers complete.56880 markers complete.56940 markers complete.57000 markers complete.57060 markers complete.57120 markers complete.57180 markers complete.57240 markers complete.57300 markers complete.57360 markers complete.57420 markers complete.57480 markers complete.57540 markers complete.57600 markers complete.57660 markers complete.57720 markers complete.57780 markers complete.57840 markers complete.57900 markers complete.57960 markers complete.58020 markers complete.58080 markers complete.58140 markers complete.58200 markers complete.58260 markers complete.58320 markers complete.58380 markers complete.58440 markers complete.58500 markers complete.58560 markers complete.58620 markers complete.58680 markers complete.58740 markers complete.58800 markers complete.58860 markers complete.58920 markers complete.58980 markers complete.59040 markers complete.59100 markers complete.59160 markers complete.59220 markers complete.Relationship matrix calculation complete.
-24 people excluded by --rel-cutoff.
-Remaining sample IDs written to ./tmp/testout.tmp1.pruned.rel.id .
---make-bed to ./tmp/testout.tmp1.pruned.bed + ./tmp/testout.tmp1.pruned.bim +
-./tmp/testout.tmp1.pruned.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp1.pruned.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp1.pruned
-  --list-duplicate-vars ids-only suppress-first
-  --noweb
-  --out ./tmp/testout.tmp1.pruned
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-59220 variants loaded from .bim file.
-399 people (194 males, 205 females) loaded from .fam.
-399 phenotype values loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 399 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.995716.
-59220 variants and 399 people pass filters and QC.
-Among remaining phenotypes, 0 are cases and 399 are controls.
---list-duplicate-vars report written to ./tmp/testout.tmp1.pruned.dupvar .
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp2.pruned.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp1.pruned
-  --make-bed
-  --noweb
-  --out ./tmp/testout.tmp2.pruned
-  --remove ./tmp/testout.tmp1.pruned.dupvar
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-59220 variants loaded from .bim file.
-399 people (194 males, 205 females) loaded from .fam.
-399 phenotype values loaded from .fam.
---remove: 399 people remaining.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 399 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.995716.
-59220 variants and 399 people pass filters and QC.
-Among remaining phenotypes, 0 are cases and 399 are controls.
---make-bed to ./tmp/testout.tmp2.pruned.bed + ./tmp/testout.tmp2.pruned.bim +
-./tmp/testout.tmp2.pruned.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./tmp/testout.tmp2.pruned.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp2.pruned
-  --noweb
-  --out ./tmp/testout.tmp2.pruned
-  --recode
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-59220 variants loaded from .bim file.
-399 people (194 males, 205 females) loaded from .fam.
-399 phenotype values loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 399 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.995716.
-59220 variants and 399 people pass filters and QC.
-Among remaining phenotypes, 0 are cases and 399 are controls.
---recode ped to ./tmp/testout.tmp2.pruned.ped + ./tmp/testout.tmp2.pruned.map
-... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-smartpca -p ./out/testout.pca.par >./out/testout.elog
-ploteig -i ./out/testout.pca.evec -c 1:2  -p Control  -x  -y  -o ./out/testout.plot.xtxt 
-## number of fields: 12
-Control
-evec2pca-ped.perl 10 ./out/testout.pca.evec ./tmp/testout.tmp2.pruned.fam ./out/testout.pca
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.log.
-Options in effect:
-  --bfile ./tmp/testout.tmp2
-  --geno 0.05
-  --hwe 0.000005
-  --maf 0.01
-  --make-bed
-  --mind 0.05
-  --noweb
-  --out ./out/testout
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-567248 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-0 people removed due to missing genotype data (--mind).
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.996045.
-5200 variants removed due to missing genotype data (--geno).
---hwe: 340 variants removed due to Hardy-Weinberg exact test.
-29944 variants removed due to minor allele threshold(s)
-(--maf/--max-maf/--mac/--max-mac).
-531764 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.bed + ./out/testout.bim + ./out/testout.fam ...
-0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.log.
-Options in effect:
-  --bfile ./out/testout
-  --freq
-  --noweb
-  --out ./out/testout
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997621.
---freq: Allele frequencies (founders only) written to ./out/testout.frq .
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr1.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 1
-  --make-bed
-  --noweb
-  --out ./out/testout.chr1
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-41350 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997706.
-41350 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr1.bed + ./out/testout.chr1.bim +
-./out/testout.chr1.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr1.log.
-Options in effect:
-  --bfile ./out/testout.chr1
-  --noweb
-  --out ./out/testout.chr1
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-41350 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997706.
-41350 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr1.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr2.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 2
-  --make-bed
-  --noweb
-  --out ./out/testout.chr2
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-44059 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997642.
-44059 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr2.bed + ./out/testout.chr2.bim +
-./out/testout.chr2.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr2.log.
-Options in effect:
-  --bfile ./out/testout.chr2
-  --noweb
-  --out ./out/testout.chr2
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-44059 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997642.
-44059 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr2.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr3.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 3
-  --make-bed
-  --noweb
-  --out ./out/testout.chr3
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-36756 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997714.
-36756 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr3.bed + ./out/testout.chr3.bim +
-./out/testout.chr3.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr3.log.
-Options in effect:
-  --bfile ./out/testout.chr3
-  --noweb
-  --out ./out/testout.chr3
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-36756 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997714.
-36756 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr3.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr4.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 4
-  --make-bed
-  --noweb
-  --out ./out/testout.chr4
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-32738 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997727.
-32738 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr4.bed + ./out/testout.chr4.bim +
-./out/testout.chr4.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr4.log.
-Options in effect:
-  --bfile ./out/testout.chr4
-  --noweb
-  --out ./out/testout.chr4
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-32738 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997727.
-32738 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr4.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr5.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 5
-  --make-bed
-  --noweb
-  --out ./out/testout.chr5
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-33259 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997616.
-33259 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr5.bed + ./out/testout.chr5.bim +
-./out/testout.chr5.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr5.log.
-Options in effect:
-  --bfile ./out/testout.chr5
-  --noweb
-  --out ./out/testout.chr5
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-33259 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997616.
-33259 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr5.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr6.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 6
-  --make-bed
-  --noweb
-  --out ./out/testout.chr6
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-36952 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997496.
-36952 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr6.bed + ./out/testout.chr6.bim +
-./out/testout.chr6.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr6.log.
-Options in effect:
-  --bfile ./out/testout.chr6
-  --noweb
-  --out ./out/testout.chr6
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-36952 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997496.
-36952 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr6.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr7.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 7
-  --make-bed
-  --noweb
-  --out ./out/testout.chr7
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-29726 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997661.
-29726 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr7.bed + ./out/testout.chr7.bim +
-./out/testout.chr7.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr7.log.
-Options in effect:
-  --bfile ./out/testout.chr7
-  --noweb
-  --out ./out/testout.chr7
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-29726 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997661.
-29726 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr7.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr8.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 8
-  --make-bed
-  --noweb
-  --out ./out/testout.chr8
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-30149 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997511.
-30149 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr8.bed + ./out/testout.chr8.bim +
-./out/testout.chr8.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr8.log.
-Options in effect:
-  --bfile ./out/testout.chr8
-  --noweb
-  --out ./out/testout.chr8
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-30149 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997511.
-30149 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr8.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr9.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 9
-  --make-bed
-  --noweb
-  --out ./out/testout.chr9
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-25816 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997796.
-25816 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr9.bed + ./out/testout.chr9.bim +
-./out/testout.chr9.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr9.log.
-Options in effect:
-  --bfile ./out/testout.chr9
-  --noweb
-  --out ./out/testout.chr9
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-25816 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997796.
-25816 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr9.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr10.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 10
-  --make-bed
-  --noweb
-  --out ./out/testout.chr10
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-28382 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997607.
-28382 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr10.bed + ./out/testout.chr10.bim +
-./out/testout.chr10.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr10.log.
-Options in effect:
-  --bfile ./out/testout.chr10
-  --noweb
-  --out ./out/testout.chr10
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-28382 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997607.
-28382 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr10.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr11.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 11
-  --make-bed
-  --noweb
-  --out ./out/testout.chr11
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-26398 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.99765.
-26398 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr11.bed + ./out/testout.chr11.bim +
-./out/testout.chr11.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr11.log.
-Options in effect:
-  --bfile ./out/testout.chr11
-  --noweb
-  --out ./out/testout.chr11
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-26398 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.99765.
-26398 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr11.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr12.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 12
-  --make-bed
-  --noweb
-  --out ./out/testout.chr12
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-26323 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997707.
-26323 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr12.bed + ./out/testout.chr12.bim +
-./out/testout.chr12.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr12.log.
-Options in effect:
-  --bfile ./out/testout.chr12
-  --noweb
-  --out ./out/testout.chr12
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-26323 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997707.
-26323 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr12.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr13.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 13
-  --make-bed
-  --noweb
-  --out ./out/testout.chr13
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-20286 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997624.
-20286 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr13.bed + ./out/testout.chr13.bim +
-./out/testout.chr13.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr13.log.
-Options in effect:
-  --bfile ./out/testout.chr13
-  --noweb
-  --out ./out/testout.chr13
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-20286 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997624.
-20286 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr13.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr14.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 14
-  --make-bed
-  --noweb
-  --out ./out/testout.chr14
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-17858 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997569.
-17858 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr14.bed + ./out/testout.chr14.bim +
-./out/testout.chr14.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr14.log.
-Options in effect:
-  --bfile ./out/testout.chr14
-  --noweb
-  --out ./out/testout.chr14
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-17858 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997569.
-17858 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr14.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr15.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 15
-  --make-bed
-  --noweb
-  --out ./out/testout.chr15
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-16140 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997509.
-16140 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr15.bed + ./out/testout.chr15.bim +
-./out/testout.chr15.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr15.log.
-Options in effect:
-  --bfile ./out/testout.chr15
-  --noweb
-  --out ./out/testout.chr15
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-16140 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997509.
-16140 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr15.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr16.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 16
-  --make-bed
-  --noweb
-  --out ./out/testout.chr16
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-16182 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997575.
-16182 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr16.bed + ./out/testout.chr16.bim +
-./out/testout.chr16.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr16.log.
-Options in effect:
-  --bfile ./out/testout.chr16
-  --noweb
-  --out ./out/testout.chr16
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-16182 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997575.
-16182 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr16.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr17.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 17
-  --make-bed
-  --noweb
-  --out ./out/testout.chr17
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-14141 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997568.
-14141 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr17.bed + ./out/testout.chr17.bim +
-./out/testout.chr17.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr17.log.
-Options in effect:
-  --bfile ./out/testout.chr17
-  --noweb
-  --out ./out/testout.chr17
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-14141 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997568.
-14141 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr17.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr18.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 18
-  --make-bed
-  --noweb
-  --out ./out/testout.chr18
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-16015 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997666.
-16015 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr18.bed + ./out/testout.chr18.bim +
-./out/testout.chr18.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr18.log.
-Options in effect:
-  --bfile ./out/testout.chr18
-  --noweb
-  --out ./out/testout.chr18
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-16015 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997666.
-16015 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr18.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr19.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 19
-  --make-bed
-  --noweb
-  --out ./out/testout.chr19
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-9478 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997259.
-9478 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr19.bed + ./out/testout.chr19.bim +
-./out/testout.chr19.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr19.log.
-Options in effect:
-  --bfile ./out/testout.chr19
-  --noweb
-  --out ./out/testout.chr19
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-9478 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997259.
-9478 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr19.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr20.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 20
-  --make-bed
-  --noweb
-  --out ./out/testout.chr20
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-13590 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997276.
-13590 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr20.bed + ./out/testout.chr20.bim +
-./out/testout.chr20.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr20.log.
-Options in effect:
-  --bfile ./out/testout.chr20
-  --noweb
-  --out ./out/testout.chr20
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-13590 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997276.
-13590 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr20.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr21.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 21
-  --make-bed
-  --noweb
-  --out ./out/testout.chr21
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-7983 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997648.
-7983 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr21.bed + ./out/testout.chr21.bim +
-./out/testout.chr21.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr21.log.
-Options in effect:
-  --bfile ./out/testout.chr21
-  --noweb
-  --out ./out/testout.chr21
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-7983 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997648.
-7983 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr21.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr22.log.
-Options in effect:
-  --bfile ./out/testout
-  --chr 22
-  --make-bed
-  --noweb
-  --out ./out/testout.chr22
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-8183 out of 531764 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997577.
-8183 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ./out/testout.chr22.bed + ./out/testout.chr22.bim +
-./out/testout.chr22.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
-PLINK v1.90b4.1 64-bit (30 Mar 2017)           www.cog-genomics.org/plink/1.9/
-(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ./out/testout.chr22.log.
-Options in effect:
-  --bfile ./out/testout.chr22
-  --noweb
-  --out ./out/testout.chr22
-  --recode vcf
-
-Note: --noweb has no effect since no web check is implemented yet.
-7984 MB RAM detected; reserving 3992 MB for main workspace.
-8183 variants loaded from .bim file.
-423 people (209 males, 214 females) loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 423 founders and 0 nonfounders present.
-Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
-Total genotyping rate is 0.997577.
-8183 variants and 423 people pass filters and QC.
-Note: No phenotypes present.
---recode vcf to ./out/testout.chr22.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
