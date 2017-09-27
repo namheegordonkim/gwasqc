@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-# Perform a chromosome-wise concat for each chromosome of different imputed
-# datasets.
+# Perform a chromosome-wise intersection for each chromosome of different
+# imputed datasets.
 
 # Requirements:
 # * vcf format chromosome-wise GWAS files of the specified name must exist
@@ -14,16 +14,22 @@
 #         output directory
 source params/pre_impute_params
 
-dirname=$1
-outname=$outdir/$2
+mkdir -p $tmpdir
 
 numchr=22
 
-concat_args=""
 for i in `seq 1 $numchr`
 do
-  chrfname=$dirname/chr$i.dose.vcf.gz
-  concat_args="$concat_args $chrfname"
+  iseced_file_prefix=""
+  isec_args=""
+  for dirname in "${@%/}"
+  do
+    dataname=$(basename $dirname)
+    iseced_file_prefix=$iseced_file_prefix+$dataname
+    isec_args="$isec_args $dirname/chr$i.dose.vcf.gz"
+  done
+  iseced_file_prefix=${iseced_file_prefix:1}
+  vcf-isec $isec_args | bgzip -c > $outdir/$iseced_file_prefix.chr$i.vcf.gz &
 done
 
-bcftools concat $concat_args -a -D -O z -o $outname
+wait

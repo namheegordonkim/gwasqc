@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# Perform a chromosome-wise concat for each chromosome of different imputed
+# Perform a chromosome-wise merge for each chromosome of different imputed
 # datasets.
 
 # Requirements:
@@ -14,16 +14,22 @@
 #         output directory
 source params/pre_impute_params
 
-dirname=$1
-outname=$outdir/$2
+mkdir -p $tmpdir
 
 numchr=22
 
-concat_args=""
-for i in `seq 1 $numchr`
+missing=(5 12 8 7 21 20 10 2)
+
+for i in ${missing[@]}
 do
-  chrfname=$dirname/chr$i.dose.vcf.gz
-  concat_args="$concat_args $chrfname"
+  for dirname in "${@%/}"
+  do
+    dataname=$(basename $dirname)
+    chrfname=chr$i.dose.vcf.gz
+    filename=$dirname/reheadered/$chrfname
+    outname=$outdir/$dataname.normed.$chrfname
+    bcftools norm -N -d both -c ws -O z -o $outname -f ~/hg19/hg19.nochr.fa $filename &
+  done
 done
 
-bcftools concat $concat_args -a -D -O z -o $outname
+wait
