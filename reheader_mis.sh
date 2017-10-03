@@ -7,10 +7,10 @@ for i in "${@%/}"
 do
   for j in $i
   do
-    (tabix -H $j > $j.header
-    sed -i "${missing_header_line_number}r $missing_header_line_file" $j.header
-    bcftools reheader -h $j.header $j -o $j.reheadered
-    tabix $j.reheadered) &
+    (
+      sed -i "${missing_header_line_number}r $missing_header_line_file" $j
+      tabix $j
+    ) &
   done
 done
 wait

@@ -78,14 +78,4 @@ plink --noweb --bfile $tmp2.pruned --recode --out $tmp2.pruned
 #-e $out.eval -l $out.elog -o $out.pca -p $out.plot
 
 # step 10: frequency check after-the-fact
-# plink --noweb --bfile $out --freq --out $out
-
-# step 11: split by chromosome and recode into vcf
-numchr=22
-for i in `seq 1 $numchr`
-do
-  plink --noweb --bfile $out --chr $i --make-bed --out $out.chr$i
-  plink --noweb --bfile $out.chr$i --recode vcf --out $out.chr$i
-  # compress
-  vcf-sort $out.chr$i.vcf | bgzip -c > $out.chr$i.vcf.gz
-done
+plink --noweb --bfile $out --freq --out $out
