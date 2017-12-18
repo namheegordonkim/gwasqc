@@ -21,27 +21,50 @@ source params/pre_impute_params
 missing_header_line_file=scripts/missing_header_lines.txt
 missing_header_line_number=11
 hg19=~/hg19/hg19.nochr.fa
+hrc=~/hrc/HRC.r1-1.GRCh37.wgs.mac5.sites.vcf.gz
 
-for $i in `seq 1 22`
+start=$1
+end=$2
+
+for i in `seq $start $end`
 do
+  (
+  onekg=~/1kg/ALL.chr$i.phase3_shapeit2_mvncall_integrated_v5_func_anno.20130502.sites.vcf.gz
   merge_args=""
-  for $dirname in "${@%/}"
+  outputFilename=""
+  for dirname in "${@:3}"
   do
-    $dataname=$(basename $dirname)
-    chrfname=chr$i.dose.vcf.gz
+    dataname=$(basename $dirname)
+    chrfname=chr$i.dose
 
     # reheader
-    tabix -H $dirname/$chrfname > $tmpdir/$chrfname.header
+    tabix -H $dirname/$chrfname.vcf.gz > $tmpdir/$dataname.$chrfname.header
     sed -i "${missing_header_line_number}r $missing_header_line_file" $tmpdir/$dataname.$chrfname.header
-    bcftools reheader -h $tmpdir/$dataname.$chrfname.header $dirname/$chrfname -o $tmpdir/$dataname.$chrfname.reheadered
-    tabix $tmpdir/$dataname.$chrfname.reheadered
+    bcftools reheader -h $tmpdir/$dataname.$chrfname.header -o $tmpdir/$dataname.$chrfname.reheadered.vcf.gz $dirname/$chrfname.vcf.gz
+    tabix $tmpdir/$dataname.$chrfname.reheadered.vcf.gz
 
-    # recode REF and ALT (mutate the tmp file!)
-    bcftools norm -d both -N -c ws -f $hg19 -O z -o $tmpdir/$dataname.$chrfname.reheadered $tmpdir/$dataname.$chrfname.reheadered
+    # annotate with 1000 genomes phase 3 reference panel
+    # bcftools annotate -a $hrc -c CHROM,POS,ID -O z -o $tmpdir/$dataname.$chrfname.annotated.vcf.gz $tmpdir/$dataname.$chrfname.normed.vcf.gz
+    # rm -f $tmpdir/$dataname.$chrfname.normed*
+    # tabix $tmpdir/$dataname.$chrfname.annotated.vcf.gz
 
-    merge_args="$merge_args+$dataname"
+    bcftools annotate -a $onekg -c CHROM,POS,ID -O z -o $tmpdir/$dataname.$chrfname.annotated.vcf.gz $tmpdir/$dataname.$chrfname.reheadered.vcf.gz
+    rm -f $tmpdir/$dataname.$chrfname.reheadered*
+    tabix $tmpdir/$dataname.$chrfname.annotated.vcf.gz
+
+    #recode REF and ALT (mutate the tmp file!)
+    bcftools norm -d both -N -c ws -f $hg19 -O z -o $tmpdir/$dataname.$chrfname.normed.vcf.gz $tmpdir/$dataname.$chrfname.annotated.vcf.gz
+    rm -f $tmpdir/$dataname.$chrfname.annotated*
+    tabix $tmpdir/$dataname.$chrfname.normed.vcf.gz
+
+    merge_args="$merge_args $tmpdir/$dataname.$chrfname.normed.vcf.gz"
+    outputFilename="$outputFilename+$dataname"
   done
   # merge
   merge_args=${merge_args:1}
-  bcftools merge $merge_args 
+  outputFilename=${outputFilename:1}.$chrfname.vcf.gz
+  time bcftools merge $merge_args -O z -o $outdir/$outputFilename
+  # rm -f $tmpdir/$dataname.$chrname.annotated*
+  ) &
 done
+wait

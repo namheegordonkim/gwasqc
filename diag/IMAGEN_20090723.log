@@ -1,0 +1,29 @@
+PLINK v1.90b4.1 64-bit (30 Mar 2017)
+Options in effect:
+  --bfile /nfs/nkim412/nkim412/genotype/raw/IMAGEN_20090723
+  --het
+  --missing
+  --out ./diag/IMAGEN_20090723
+
+Hostname: node-14.hpc.local
+Working directory: /nfs/nkim412/nkim412/gwasqc
+Start time: Mon Aug 28 15:48:15 2017
+
+Random number seed: 1503960495
+20079 MB RAM detected; reserving 10039 MB for main workspace.
+582892 variants loaded from .bim file.
+456 people (0 males, 0 females, 456 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ./diag/IMAGEN_20090723.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 456 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.996015.
+--missing: Sample missing data report written to ./diag/IMAGEN_20090723.imiss,
+and variant-based missing data report written to ./diag/IMAGEN_20090723.lmiss.
+582892 variants and 456 people pass filters and QC.
+Note: No phenotypes present.
+--het: 561444 variants scanned, report written to ./diag/IMAGEN_20090723.het .
+
+End time: Mon Aug 28 15:48:16 2017
